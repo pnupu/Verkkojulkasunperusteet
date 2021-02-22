@@ -335,7 +335,13 @@ footer > p {
       background-position: 60% 0px;
       background-size: 200%;
   }
-
+  .project-card {
+    max-width: 65vw;
+    max-height: calc(100vw - 40px);
+  }
+  .contact-information > h1 {
+    font-size: 35px;
+  }
   .header {
       padding-top: 30px;
       min-height: calc(100vh - 30px);
