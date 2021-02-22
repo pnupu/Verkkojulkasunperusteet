@@ -293,6 +293,8 @@ header > a {
   max-height: calc(100vw - 40px);
 }
 
+
+
 footer {
   width: 100%;
   display: flex;

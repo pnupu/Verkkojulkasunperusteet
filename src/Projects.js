@@ -35,7 +35,7 @@ const Projects = (project) => {
 
         </div>
       </main>
-      <footer>
+      <footer className="project-footer">
         <p>{footer}</p>
       </footer>
     </div>

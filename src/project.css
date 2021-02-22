@@ -48,7 +48,7 @@ a:hover {
 
 
 .container-project {
-    background-color: rgba(74, 138, 214);
+    background: linear-gradient(to bottom, #040105 0px, #4A8AD6 100% );
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -122,9 +122,11 @@ p{
 main {
     background-image: rgba(74, 138, 214);
 }
+.project-footer {
+    background:   #4A8AD6;
+}
 
 footer {
-    background-color: rgba(74, 138, 214, 0.9);
     width: 100%;
     display: flex;
     justify-content: center;
