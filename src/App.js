@@ -13,10 +13,10 @@ const App = () => {
 
     return (
         <Switch>
-            <Route path="/:id">
+            <Route path="/portfolio/:id">
                 <Projects p={projectPage}/>
             </Route>
-            <Route path="/">
+            <Route path="/portfolio/">
                 <Main />
             </Route>
         
