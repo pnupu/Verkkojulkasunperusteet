@@ -5,7 +5,6 @@ import React from 'react'
 import thumbnail from  './assets/eduvizer_thumbnail.png'
 
 const Main = () => {
-  projects.map(p => console.log(p))
   const footer  = `Ilkka Lappeteläinen ${new Date().getFullYear()}`
 
   window.onscroll = function() {
