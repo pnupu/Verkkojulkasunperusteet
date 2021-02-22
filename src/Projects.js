@@ -8,8 +8,8 @@ const Projects = (props) => {
     const handleClick = (e) => {
         e.preventDefault()
         window.location.href = `./`
-    } 
-    if (p.type === undefined){
+    }
+    if (p === undefined){
         return null
     }
     return (
