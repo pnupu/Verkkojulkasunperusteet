@@ -107,7 +107,7 @@ p{
     align-self: center;
 }
 
-.project-details > img:hover {
+.back-container > img:hover {
     cursor: pointer;
 }
 
