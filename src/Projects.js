@@ -2,11 +2,14 @@ import React from 'react'
 import arrow from './assets/arrow.svg'
 import './project.css'
 import image from './assets/eduvizer.png'
+import { useHistory } from 'react-router-dom'
 
 const Projects = (project) => {
   const p = project.p
+  const history = useHistory()
   const handleClick = (e) => {
     e.preventDefault()
+    history.push(`./${p.id}`)
     window.location.href = './'
   }
   if (p === undefined){

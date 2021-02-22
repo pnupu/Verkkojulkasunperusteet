@@ -6,6 +6,7 @@ import Main from './Main'
 import Projects from './Projects'
 
 const App = () => {
+
   const matchProject = useRouteMatch('/:id')
   const projectPage = matchProject
     ? projects.find(project => project.id === matchProject.params.id)

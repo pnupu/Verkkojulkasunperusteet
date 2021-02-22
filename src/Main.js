@@ -3,10 +3,11 @@ import profiilikuva from './assets/profiilikuva.png'
 import projects from './projectlist'
 import React from 'react'
 import thumbnail from  './assets/eduvizer_thumbnail.png'
+import { useHistory } from 'react-router-dom'
 
 const Main = () => {
   const footer  = `Ilkka Lappeteläinen ${new Date().getFullYear()}`
-
+  const history = useHistory()
   window.onscroll = function() {
     if (window.pageYOffset > 50) {
       document.getElementById('nav').style.opacity = '1'
@@ -17,6 +18,7 @@ const Main = () => {
 
   const handleClick = (e, id) => {
     e.preventDefault()
+    history.push('/')
     window.location.href = `./${id}`
   }
   return (
