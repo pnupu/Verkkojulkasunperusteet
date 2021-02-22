@@ -1,10 +1,12 @@
 body {
+    background-image: rgba(74, 138, 214);
     margin: 0;
     width: 100%;
     overflow-x: hidden;
     font-family: 'Roboto Mono', sans-serif;
-    color: #0e1d2e;
+    color: rgba(74, 138, 214);
     overflow-y: scroll;
+    
 }
 
 h1 {
@@ -46,7 +48,8 @@ a:hover {
 
 
 
-.container {
+.container-project {
+    background-color: rgba(74, 138, 214);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -117,8 +120,13 @@ p{
 .project-details p {
     white-space: pre-wrap;
 }
+main {
+    color: rgba(74, 138, 214);
+    background-image: rgba(74, 138, 214);
+}
 
 footer {
+    background-color: rgba(74, 138, 214, 0.9);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -126,6 +134,7 @@ footer {
 }
 
 footer > p {
+    padding: 30px;
     color: white;
     padding-bottom: 30px;
 }

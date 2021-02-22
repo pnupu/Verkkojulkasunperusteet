@@ -6,6 +6,7 @@ import { useHistory } from 'react-router-dom'
 
 const Projects = (project) => {
   const p = project.p
+  const footer  = `Ilkka Lappeteläinen ${new Date().getFullYear()}`
   const history = useHistory()
   const handleClick = (e) => {
     e.preventDefault()
@@ -19,7 +20,7 @@ const Projects = (project) => {
     <div>
 
 
-      <main className="container">
+      <main className="container-project">
         <div className="project-container" id="project-container">
           <div className="back-container">
             <img src={arrow} alt="Back" onClick={(e) => handleClick(e)} />
@@ -35,7 +36,7 @@ const Projects = (project) => {
         </div>
       </main>
       <footer>
-        <p id="footer-text"></p>
+        <p>{footer}</p>
       </footer>
     </div>
   )
