@@ -104,9 +104,9 @@ p{
 .project-details > img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     max-width: 70vw;
-    max-height: auto;
+    max-height: 500px;
+    height: auto;
     padding-bottom: 20px;
-    height: 500px;
     align-self: center;
 }
 
