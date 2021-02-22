@@ -1,5 +1,4 @@
 import thumbnail from  "./assets/eduvizer_thumbnail.png"
-import image from './assets/eduvizer.png'
 const Projectslist = [
     {
         id: "eduvizer",
