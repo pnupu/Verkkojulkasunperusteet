@@ -171,6 +171,7 @@ header > a {
   justify-content: flex-start;
   align-items: center;
   padding: 34px 0;
+  color: #040105;
 }
 
 .about > h1 {
