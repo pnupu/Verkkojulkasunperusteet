@@ -1,13 +1,13 @@
 import React from 'react'
 import arrow from './assets/arrow.svg'
 import './project.css'
-import image from './assets/eduvizer.png'
 import { useHistory } from 'react-router-dom'
 
 const Projects = (project) => {
   const p = project.p
   const footer  = `Ilkka Lappeteläinen ${new Date().getFullYear()}`
   const history = useHistory()
+  console.log(p)
   const handleClick = (e) => {
     e.preventDefault()
     history.push(`./${p.id}`)
@@ -28,7 +28,7 @@ const Projects = (project) => {
           </div>
 
           <div className="project-details">
-            <img src={image} alt={'Project screenshot'}/>
+            <img src={p.image.default} alt={'Project screenshot'}/>
             <h2>{p.name}</h2>
             <p>{p.fullDescription}</p>
           </div>

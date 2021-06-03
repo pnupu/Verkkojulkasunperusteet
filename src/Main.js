@@ -2,7 +2,6 @@ import './App.css'
 import profiilikuva from './assets/profiilikuva.png'
 import projects from './projectlist'
 import React from 'react'
-import thumbnail from  './assets/eduvizer_thumbnail.png'
 import { useHistory } from 'react-router-dom'
 
 const Main = () => {
@@ -21,6 +20,7 @@ const Main = () => {
     history.push('/')
     window.location.href = `./${id}`
   }
+  console.log(projects)
   return (
     <div>
       <header id="nav">
@@ -63,8 +63,7 @@ const Main = () => {
           <h2>My Projects</h2>
           <div className="project-container">
             {projects.map( (p,i) =>
-
-              <div key={i} className="project-card" style={{ backgroundImage: 'url(' + thumbnail + ')' }} onClick={(e) => handleClick(e, p.id)}>
+              <div key={i} className="project-card" style={{ backgroundImage: 'url(' + p.thumbnail.default + ')' }} onClick={(e) => handleClick(e, p.id)}>
                 <div>
                   <div>
                     <h4>{p.name}</h4>
